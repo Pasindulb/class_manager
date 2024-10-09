@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Class Manager</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>class_manager</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+
+    <!-- Add the notification action categories -->
+    <key>UIUserNotificationActionSettings</key>
+    <dict>
+        <key>UIUserNotificationCategories</key>
+        <array>
+            <dict>
+                <key>identifier</key>
+                <string>ATTENDANCE_CATEGORY</string> <!-- Category identifier for attendance -->
+                <key>actions</key>
+                <array>
+                    <!-- "Yes" action -->
+                    <dict>
+                        <key>identifier</key>
+                        <string>YES_ACTION</string> <!-- Unique action identifier for "Yes" -->
+                        <key>title</key>
+                        <string>Yes</string> <!-- Displayed title in notification -->
+                        <key>activationMode</key>
+                        <string>background</string> <!-- Allow background activation -->
+                        <key>destructive</key>
+                        <false/> <!-- False, since it’s not a destructive action -->
+                        <key>authenticationRequired</key>
+                        <false/> <!-- No authentication required -->
+                    </dict>
+                    <!-- "No" action -->
+                    <dict>
+                        <key>identifier</key>
+                        <string>NO_ACTION</string> <!-- Unique action identifier for "No" -->
+                        <key>title</key>
+                        <string>No</string>
+                        <key>activationMode</key>
+                        <string>background</string>
+                        <key>destructive</key>
+                        <false/>
+                        <key>authenticationRequired</key>
+                        <false/>
+                    </dict>
+                </array>
+            </dict>
+        </array>
+    </dict>
+</dict>
+</plist>
